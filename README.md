@@ -4,14 +4,14 @@ single server platform for multiple domains that are for sale
 Usage:
 Use NGINX to setup server blocks for each domain:
 
-Server {
-  server_name mydomain.com;
-  [...]
-}
-Server {
-  server_name myotherdomain.com;
-  [...]
-}
+	Server {
+		server_name mydomain.com;
+		[...]
+	}
+	Server {
+		server_name myotherdomain.com;
+		[...]
+	}
 
 Then run the application at your desired port, here I use port 8080.
 Then set the server block for each domain to use the application port and listen to port 80, 
