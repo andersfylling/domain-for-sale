@@ -32,25 +32,25 @@ upstream domainForSale {
 ####
 
 #mydomain
-Server {
-	server_name   mydomain.com;
-	listen        80;
-  
-	location / {
-		proxy_set_header 	Upgrade $http_upgrade;
-		proxy_set_header 	Connection "upgrade";
-		proxy_set_header 	X-Forwarded-For $proxy_add_x_forwarded_for;
-		proxy_set_header 	X-Real-IP $remote_addr;
-		proxy_set_header 	Host $host;
-		proxy_set_header 	X-NginX-Proxy true;
-
-		proxy_next_upstream 	error timeout http_500 http_502 http_503 http_504;
-		proxy_http_version 	1.1;
-
-		proxy_pass 		http://domainForSale/;
-		proxy_redirect 		off;
+	Server {
+		server_name   mydomain.com;
+		listen        80;
+		
+		location / {
+			proxy_set_header 	Upgrade $http_upgrade;
+			proxy_set_header 	Connection "upgrade";
+			proxy_set_header 	X-Forwarded-For $proxy_add_x_forwarded_for;
+			proxy_set_header 	X-Real-IP $remote_addr;
+			proxy_set_header 	Host $host;
+			proxy_set_header 	X-NginX-Proxy true;
+			
+			proxy_next_upstream 	error timeout http_500 http_502 http_503 http_504;
+			proxy_http_version 	1.1;
+			
+			proxy_pass 		http://domainForSale/;
+			proxy_redirect 		off;
+		}
 	}
-}
 Server {
 	server_name   myotherdomain.com;
 	listen        80;
