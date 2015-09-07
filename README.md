@@ -2,11 +2,14 @@
 single server platform for multiple domains that are for sale
 
 #Requirements
+
 Nodejs
+
 NPM
 
 #Installation
 in your terminal/command prompt run the following command:
+
 	npm install
 
 
