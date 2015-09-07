@@ -1,7 +1,17 @@
 # domain-for-sale
 single server platform for multiple domains that are for sale
 
-Usage:
+#Requirements
+Nodejs
+NPM
+
+#Installation
+in your terminal/command prompt run the following command:
+	npm install
+
+
+
+#Usage:
 Use NGINX to setup server blocks for each domain:
 
 	Server {
