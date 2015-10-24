@@ -4,7 +4,9 @@ single server platform for multiple domains that are for sale
 #Requirements
 
 -Nodejs
+
 -NPM
+
 -NGINX
 
 #Installation
