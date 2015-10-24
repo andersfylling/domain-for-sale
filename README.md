@@ -3,11 +3,11 @@ single server platform for multiple domains that are for sale
 
 #Requirements
 
--Nodejs
+-Nodejs	https://nodejs.org/
 
--NPM
+-NPM	"Comes with nodejs."
 
--NGINX
+-NGINX	http://nginx.org/
 
 #Installation
 in your terminal/command prompt run the following command:
